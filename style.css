@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: none;
+}
+
+.main-box {
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(12px);  /*check this out*/
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    border-radius: 20px;
+    position: relative;
+    height: 600px;
+    width: 700px;
+    background: transparent;
+    margin-top: 80px;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+}
+.main-box::-webkit-scrollbar{
+    display: none;
+}
+.inp{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+
+.data::-webkit-input-placeholder {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.delete{
+    width: 3rem;
+    height: 2rem;
+    margin-left: 8px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+i {
+
+    margin-right: 0.7rem;
+    font-size: 18px;
+}
+
+.common {
+    border-bottom: 2px solid black;
+}
+
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  li:before {
+    content: "\25BA \0020";
+    font-size: 1.4rem;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+  }
+
+.link {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+  
+  .cursor {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .outer {
+    border: 1px solid white;
+  }
+  
+  .inner {
+    background: rgba(255,0,0,0.8);
+    transition: 250ms ease-out;
+  }
+  
+  .cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .inner.hover {
+    background: white;
+    mix-blend-mode: difference;
+  }
