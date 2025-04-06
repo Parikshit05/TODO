@@ -83,11 +83,11 @@ i {
 
     margin-right: 0.7rem;
     font-size: 1.18rem;
-    color: white;
+    color: black;
 }
 
 .common {
-    border-bottom: 0.2rem solid rgba(255,255,255,.8);
+    border-bottom: 0.2rem solid black;
 }
 
 
