@@ -17,6 +17,11 @@ body {
     /* background-position: center; */
 }
 
+p{
+  font-size: 2rem;
+  font-weight: 550;
+}
+
 .main-box {
     border: 0.15rem solid rgba(255,255,255,.5);
     backdrop-filter: blur(12px);  /*check this out*/
@@ -96,7 +101,7 @@ li {
   li:before {
     content: "\25BA \0020";
     font-size: 1.4rem;
-    position: absolute;
+    /* position: absolute;
     top: 0.3125rem;
-    left: -0.625rem;
+    left: -0.625rem; */
   }
